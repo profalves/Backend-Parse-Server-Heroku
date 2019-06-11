@@ -9,12 +9,12 @@ var app1 = new ParseServer({
   restAPIKey: "restAPIKey",
   fileKey: 'myFileKey',
   masterKey: 'masterKey',
-  serverURL: "http://localhost:8080/lista"
+  serverURL: "http://localhost:5000/lista"
 });
 
 var pasreDashboardSettings = {
   "apps": [{
-    "serverURL": "http://localhost:8080/lista", //Pode substituir a palavra lista pelo nome de seu aplicativo ou projeto.        
+    "serverURL": "http://localhost:5000/lista", //Pode substituir a palavra lista pelo nome de seu aplicativo ou projeto.        
     "appId": "Lista1",
     "restAPIKey": "restAPIKey",
     "masterKey": "masterKey",
@@ -40,4 +40,4 @@ app.use('/lista', app1, function (req, res, next) {
 app.use('/dashboard', dashboard);
 
 var httpServer = require('http').createServer(app);
-httpServer.listen(8080);
+httpServer.listen(5000);
