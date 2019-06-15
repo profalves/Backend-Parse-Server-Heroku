@@ -22,7 +22,7 @@ var pasreDashboardSettings = {
   }],
   "users": [{
     "user": "rodrigo", //Pode substituir pelo seu uaário        
-    "pass": "123456",
+    "pass": "1234",
     "masterKey": "masterKey",
     "apps": [{
       "appId": "Lista1"
